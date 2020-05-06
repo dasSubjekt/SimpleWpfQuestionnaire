@@ -1,13 +1,13 @@
 ﻿<Window x:Class="SimpleWpfQuestionnaire.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:sq="clr-namespace:SimpleWpfQuestionnaire"
+        xmlns:swq="clr-namespace:SimpleWpfQuestionnaire"
         Title="ASMR Experience Questionnaire" FontSize="14" Height="500" Width="750">
     <Window.DataContext>
-        <sq:MainWindowViewModel/>
+        <swq:MainWindowViewModel/>
     </Window.DataContext>
     <Window.Resources>
-        <sq:BoolToIntConverter x:Key="RadioButtonConverter" />
+        <swq:BoolToIntConverter x:Key="RadioButtonConverter" />
         <Style TargetType="Button" >
             <Setter Property="Height" Value="32" />
             <Setter Property="Width" Value="120" />
@@ -19,7 +19,7 @@
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
         <Style TargetType="RadioButton" >
-            <Setter Property="Margin" Value="30,10,0,0" />
+            <Setter Property="Margin" Value="30,11,0,0" />
             <Setter Property="VerticalAlignment" Value="Top" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
